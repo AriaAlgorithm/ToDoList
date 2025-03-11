@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(120deg, rgb(0, 0, 0),rgb(255, 192, 211));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+   
+}
+
+.input_container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+}
+
+.input_container input{
+    font-size: medium;
+    padding: 10px;
+    border: 20px;
+    margin-block: 20px;
+    border-radius: 4px;
+    outline:none;
+
+}
+
+.input_container input[type = "button"]{
+    background-color:black;
+    color: pink;
+    margin-left: 8px;
+    font-weight: 800;
+    cursor: pointer;
+}
+ul{
+  
+  width: 100%;
+  max-width: 500px;
+}
+
+ul li{
+    list-style-type: none;
+    border: 1px solid#000000;
+    border-radius: 12px;
+    margin-block: 10px;
+    padding :6px 12px;
+    list-style-type: none;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: back 0.5s;
+    position: relative;
+}
+ul li::before {
+    content: '';
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    position: absolute;
+    background-image: url(images/radio.png); 
+    background-size: cover;
+    background-position: center;
+    top: 25px;
+    left: 8px;  
+    transform: translateY(-50%);
+}
+
+ul li {
+    padding-left: 40px; 
+}
+Ul li p.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png)
+    
+}
+
+
+.btn{
+    border: none;
+    outline: none;
+
+    font-size: 16px;
+    background:none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+   
+}
+
+.deleteBtn{
+    color:pink;
+
+}
+
+editBtn{
+    color:black;
+}
+
+ul li:hover{
+    background-color:#cbcaca;
+}
+
+h1{
+    color: pink;
+}
